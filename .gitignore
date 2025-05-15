@@ -1,0 +1,10 @@
+backend/lstm-env/
+models/
+*.h5
+*.keras
+*.dylib
+*.so
+*.pkl
+__pycache__/
+*.pyc
+
