@@ -1,0 +1,13 @@
+# Virtual environments
+venv/
+lstm-env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Large data/models
+*.h5
+*.pkl
+*.keras
+.DS_Store

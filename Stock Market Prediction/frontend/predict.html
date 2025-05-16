@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Predict Stock Price</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.plot.ly/plotly-2.27.1.min.js"></script>
+</head>
+<body>
+  <header class="top-header">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container glass">
+    <h1>📈 Predict Stock Price</h1>
+    <div class="form-section">
+      <input type="text" id="symbol" placeholder="Enter Symbol (e.g., AAPL, BTC-USD)" style="width: 200px; padding: 8px;" />
+      <button onclick="predictPrice()" style="padding: 8px 16px; font-size: 16px;">Predict</button>
+    </div>
+    <div class="result-section">
+      <h2 id="predictionSummary">Prediction will appear here...</h2>
+      <div id="prediction-result"></div>
+    </div>
+    <h2 style="margin-top: 30px;">📊 Accuracy Comparison Chart</h2>
+    <div id="predictionPlot" style="width: 100%; height: 500px;"></div>
+  </div>
+
+  <script src="stock.js"></script>
+</body>
+</html>
